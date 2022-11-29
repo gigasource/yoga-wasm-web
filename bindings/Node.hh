@@ -153,7 +153,7 @@ public: // Style getters
   double getBorder(int edge) const;
 
   YGValue getPadding(int edge) const;
-  
+
   double getGap(int gutter);
 
 public: // Tree hierarchy mutators
@@ -190,6 +190,8 @@ public: // Dirtied func inspectors
 public: // Dirtiness accessors
   void markDirty(void);
   bool isDirty(void) const;
+  void setHasNewLayout(bool hasNewLayout);
+  bool getHasNewLayout(void) const;
 
 public: // Layout mutators
   void calculateLayout(double width, double height, int direction);

@@ -4,5 +4,5 @@ yarn.lock
 .DS_Store
 
 build
-dist
 tmp
+.idea

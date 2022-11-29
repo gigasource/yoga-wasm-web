@@ -27,7 +27,7 @@ wasm:
 		-o tmp/yoga.mjs
 
 clean:
-	rm -rf tmp 
+	rm -rf tmp
 
 dir:
 	mkdir -p tmp

@@ -180,6 +180,8 @@ EMSCRIPTEN_BINDINGS(Node) {
 
     .function("markDirty", &Node::markDirty)
     .function("isDirty", &Node::isDirty)
+    .function("getHasNewLayout", &Node::getHasNewLayout)
+    .function("setHasNewLayout", &Node::setHasNewLayout)
 
     .function("calculateLayout", &Node::calculateLayout)
 

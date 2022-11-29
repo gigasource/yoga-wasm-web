@@ -386,6 +386,14 @@ bool Node::isDirty(void) const {
   return YGNodeIsDirty(m_node);
 }
 
+bool Node::getHasNewLayout(void) const {
+  return YGNodeGetHasNewLayout(m_node);
+}
+
+void Node::setHasNewLayout(bool hasNewLayout) {
+  YGNodeSetHasNewLayout(m_node, hasNewLayout);
+}
+
 void Node::calculateLayout(double width, double height, int direction) {
   YGNodeCalculateLayout(
       m_node, width, height, static_cast<YGDirection>(direction));

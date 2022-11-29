@@ -168,6 +168,8 @@ export type Yoga$Node = {
   insertChild(child: Yoga$Node, index: number): void,
   isDirty(): boolean,
   markDirty(): void,
+  getHasNewLayout(): boolean,
+  setHasNewLayout(boolean hasNewLayout): void,
   removeChild(child: Yoga$Node): void,
   reset(): void,
   setAlignContent(alignContent: Yoga$Align): void,
